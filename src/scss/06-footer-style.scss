@@ -1,0 +1,176 @@
+
+.footer {
+    width: 100%;
+    background: #3C3C3B;
+    font-family: ProximaNova, Arial Unicode MS, Arial, Helvetica, sans-serif;
+    color: white;
+
+    .footer-grid-container {
+        max-width: 1740px;
+        margin: 0 auto;
+        padding: 40px 40px 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        @media (max-width: 770px) {
+            display: block;
+            padding: 18px 25px;
+        }
+        @media (max-width: 430px) {
+            padding: 18px 10px;
+        }
+
+        .grid-column_hide {
+            @media (max-width: 770px) {
+                display: none;
+            }
+        }
+
+        .grid__heading {
+            font-size: 12px;
+            font-weight: 600;
+            @media (max-width: 430px) {
+                padding-left: 10px;
+            }
+        }
+
+        .grid__list {
+            list-style-type: none;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 20px 0;
+
+            li {
+                padding: 5px 0;
+                @media (max-width: 770px) {
+                    display: inline-block;
+                }
+
+                a {
+                    color: white;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+
+                .fa-brands {
+                    font-size: 23px;
+                    margin-right: 20px; 
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    @media (max-width: 430px) {
+                        margin-right: 0px; 
+                    }
+                }
+
+                .fa-facebook-f:hover {
+                    background-color: blueviolet;
+                }
+
+                .fa-twitter:hover {
+                    background-color: #1da1f2;
+                }
+
+                .fa-youtube:hover {
+                    background-color: red;
+                }
+
+                .fa-instagram:hover {
+                    background-color: #e1306c;
+                }
+
+                .fa-linkedin:hover {
+                    background-color: #0072b1;
+                }
+
+                .grid__list_hide {
+                    @media (max-width: 770px) {
+                        display: none;
+                    }                    
+                }
+            }
+        }
+    }
+
+    .footer-nav {
+        max-width: 1740px;
+        margin: 0 auto;
+        border-top: 1px solid #353534;
+        border-bottom: 1px solid #353534;
+
+        .footer-nav-container {
+            padding: 20px 40px;
+            display: flex;
+            @media (max-width: 1280px) {
+                flex-direction: column;
+            }
+
+            .footer-nav__item {
+                font-size: 10px;
+                margin-right: 20px;
+                @media (max-width: 1280px) {
+                    padding: 12px 0;
+                    margin-right: 0px;
+                }
+
+                .footer-nav__item-link {
+                    color: white;
+                    font-weight: 600;
+                }
+
+                .footer-nav__item-link_hover:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .footer-nav__button {
+                display: none;
+                background: #f0f0f0;
+                border: 1px solid rgba(0,0,0,0);
+                color: #3c3c3b;
+                font-size: 10px;
+                font-weight: 600;
+                margin-top: 5px;
+                height: 29px;
+                letter-spacing: 3px;
+                padding: 8px 6px 7px 8px;
+                @media (max-width: 1280PX) {
+                    display: inline-block;
+                }
+            }
+
+            .footer-nav__button_hover:hover {
+                background-color: #fff;
+                color: #141414;
+                border: 1px solid #141414;
+            }
+
+            .footer-nav__item_hide {
+                @media (max-width: 1280px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .subfooter {
+        max-width: 1740px;
+        margin: 0 auto;
+
+        .subfooter-container {
+            padding: 20px 30px;
+            font-size: 10px;
+
+            .subfooter__link {
+                color: white;
+            }
+
+            .subfooter__link_hover:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

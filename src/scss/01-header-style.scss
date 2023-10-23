@@ -1,0 +1,98 @@
+.header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    font-family: ProximaNova, Arial Unicode MS, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: .02em;
+    line-height: 18px;
+
+    .help-banner-link {
+        position: absolute;
+        top: 905%;
+        left: 87%;
+        @media (max-width: 1025px) {
+            top: 1358%;
+            left: 83%;
+        }
+        @media (max-width: 770px) {
+            display: none;
+        }
+    }
+
+    .navigate {
+        background: #3C3C3B;
+        display: flex;
+        height: 72px;
+        @media (max-width: 1025px) {
+            height: 48px;
+        }
+
+        .navigate__logo-img {
+            width: 173px;
+            @media (max-width: 1025px) {
+                height: 48px;
+                width: 120px;
+            }
+        }
+
+        .navigate__items {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 1025px) {
+                justify-content: flex-end;
+            }
+
+            .navigate__primary-items {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                @media (max-width: 1025px) {
+                    display: none;
+                }
+
+                .navigate__primary-item-link {
+                    display: flex;
+                    align-items: center;
+                    height: 72px;
+
+                    .navigate__primary-item {
+                        color: #fff;
+                        padding: 0 10px;
+                        font-weight: 600;
+                        letter-spacing: .15em;
+                        font-size: 11px;
+                    }
+                }
+
+                .navigate__primary-item-link_hover:hover {
+                    background-color: #4f4f4e;  ;
+                }
+            }
+
+            .navigate__secondary-items {
+                display: flex;
+                align-items: center;
+
+                
+
+                .navigate__secondary-item {
+                    font-size: 20px ;
+                    padding: 26px;
+                    @media (max-width: 1025px) {
+                        padding: 14px;
+                    }
+                }
+
+                .navigate__secondary-item-link_hover:hover {
+                    background-color: #4f4f4e;
+                    @media (max-width: 1025px) {
+                        background: #3C3C3B;
+                    }
+                }
+            }
+        }
+    }
+}

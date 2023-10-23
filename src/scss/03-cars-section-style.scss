@@ -1,0 +1,51 @@
+@import "00-variables-&-classes";
+
+.cars-section {
+    width: 100%;
+    background-color: $black;
+    color: #fff;
+    font-family: ProximaNova, Arial Unicode MS, Arial, Helvetica, sans-serif;
+    
+    .cars-section__container {
+        margin: 0 auto;
+        max-width: 1460px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .cars-column {
+            width: 28%;
+            margin: 50px 10px 120px 10px;
+            @media (max-width: 1280px) {
+                width: 80%;
+            }
+            @media (max-width: 900px) {
+                width: 95%;
+            }
+
+            .cars-column__pic {
+                width: 100%;
+                transition-duration: 0.5s; 
+            }
+
+            .cars-column__pic_hover:hover {
+                transition-duration: 0.5s;
+                filter: brightness(70%);
+
+            }
+
+            .cars-column__title {
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 0.1em;
+                padding: 20px 0 10px;
+            }
+
+            .cars-column__subtitle {
+                font-size: 13px;
+                padding: 10px 0 20px;
+            }
+        }
+    }
+}
+

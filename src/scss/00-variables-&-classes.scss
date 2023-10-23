@@ -1,0 +1,49 @@
+$grey: #141414;
+$black: #000;
+
+.button {
+    font-family: ProximaNova, Arial Unicode MS, Arial, Helvetica, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 55px;
+    background-color: #3c3c3b;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+
+    .button__text_before::before{
+        content: "\279C";
+        margin-right: 12px;
+    }
+}
+
+.button_hover:hover {
+    background-color: black;
+    border: 1px solid white;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.sublink {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+
+
+
+    .sublink__text_before::before {
+        content: '\276F';
+        margin-right: 12px;
+    }
+
+    .sublink__text_hover:hover{
+        background-color: black;
+        border-bottom: 1px white solid;
+    }
+}
