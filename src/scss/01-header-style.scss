@@ -29,6 +29,20 @@
             height: 48px;
         }
 
+        .fa-bars-link {
+            display: none;
+            @media (max-width: 1025px) {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                padding-left: 16px;
+            }
+
+            .fa-bars {
+                font-size: 19px;
+            }
+        }
+
         .navigate__logo-img {
             width: 173px;
             @media (max-width: 1025px) {
